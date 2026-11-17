@@ -641,7 +641,7 @@ export default function App() {
       const isWebView = isWebViewEnvironment(navigator.userAgent);
 
       // Inside Android WebView APKs or when window.speechSynthesis has 0 voices, use HTML5 Audio TTS fallback
-      if (!hasNativeSpeech || (voices.length === 0 && isWebView)) {
+      if (!hasNativeSpeech ) {
         playHtml5AudioTtsFallback(plainText, shortLang, speed, messageId);
         return;
       }
