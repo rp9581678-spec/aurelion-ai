@@ -326,10 +326,7 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({ onAuthenticated }) => {
             Continue as Guest
           </button>
 
-          <p className="pt-1 text-center text-[11px] text-[#64748B]">
-            Admin access: <span className="font-mono text-[#94A3B8]">boss@aurelion.ai</span> or PIN{' '}
-            <span className="font-mono text-[#94A3B8]">2026</span>
-          </p>
+          
         </form>
 
         {/* Dual-Environment Inline Google Sign-In Sheet (Chrome + standard browser safe, zero fake accounts) */}
