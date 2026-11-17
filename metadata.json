@@ -1,0 +1,6 @@
+{
+  "name": "AURA",
+  "description": "Next-generation AI assistant with reactive 3D hologram stage, smart modes, live web search, and Boss Admin control panel.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

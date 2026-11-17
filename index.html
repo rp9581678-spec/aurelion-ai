@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en" class="dark" style="background-color:#07090E;color:#F1F5F9;">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <title>AURELION AI</title>
+    <meta name="application-name" content="AURELION AI" />
+    <meta
+      name="description"
+      content="AURELION AI — Royal Next-Generation AI Assistant for 3D WebGL, HD Images, Coding & Multilingual Voice Chat."
+    />
+
+    <!-- OpenGraph Rich Link Preview (WhatsApp, Facebook, Instagram) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="AURELION AI" />
+    <meta property="og:title" content="AURELION AI" />
+    <meta
+      property="og:description"
+      content="Experience AURELION AI — Royal Next-Gen AI for 3D Models, HD Images, Coding & Natural Multilingual Chat."
+    />
+    <meta property="og:image" content="/pwa-512x512.png" />
+    <meta property="og:image:alt" content="AURELION AI Royal Emblem" />
+
+    <!-- Twitter / X Link Preview Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="AURELION AI" />
+    <meta
+      name="twitter:description"
+      content="Experience AURELION AI — Royal Next-Gen AI for 3D Models, HD Images, Coding & Natural Multilingual Chat."
+    />
+    <meta name="twitter:image" content="/pwa-512x512.png" />
+
+    <!-- Schema.org Google Search Site Name JSON-LD -->
+    <script type="application/ld+json">
+      {"@context":"https://schema.org","@type":"WebSite","name":"AURELION AI","alternateName":"Aurelion"}
+    </script>
+
+    <!-- PWA & Mobile Web App Meta & Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="theme-color" content="#060911" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="AURELION AI" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    style="background-color:#07090E;color:#F1F5F9;margin:0;min-height:100dvh;"
+    class="bg-[#07090E] text-[#F1F5F9] antialiased selection:bg-[#00F0FF]/25 selection:text-white"
+  >
+    <div id="root" style="min-height:100dvh;background-color:#060913;color:#F1F5F9;">
+      <style>
+        @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+      </style>
+      <div
+        id="boot-fallback"
+        style="display:flex;min-height:100dvh;width:100%;flex-direction:column;align-items:center;justify-content:center;background:#060913;color:#F1F5F9;font-family:system-ui,-apple-system,sans-serif;text-align:center;padding:24px;box-sizing:border-box;"
+      >
+        <svg
+          width="72"
+          height="72"
+          viewBox="0 0 72 72"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-label="Loading AURELION AI"
+          style="display:block;width:72px;height:72px;"
+        >
+          <defs>
+            <radialGradient id="aurelionBlueDot" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#93C5FD" />
+              <stop offset="55%" stop-color="#3B82F6" />
+              <stop offset="100%" stop-color="#1D4ED8" />
+            </radialGradient>
+            <filter id="aurelionBlueGlow" x="-60%" y="-60%" width="220%" height="220%">
+              <feGaussianBlur stdDeviation="2.8" result="blur" />
+              <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+          </defs>
+
+          <!-- Glowing Royal Blue Center Dot (#3B82F6) -->
+          <circle cx="36" cy="36" r="10.5" fill="#3B82F6" opacity="0.24" />
+          <circle cx="36" cy="36" r="6.5" fill="url(#aurelionBlueDot)" filter="url(#aurelionBlueGlow)" />
+
+          <!-- Three Curved Rotating Indian Tricolor Arrows -->
+          <g style="transform-origin:36px 36px;animation:spin 1.4s linear infinite;">
+            <!-- 1. Top/First Arrow: Saffron (#FF9933) -->
+            <g>
+              <path
+                d="M 19.03 19.03 A 24 24 0 0 1 52.97 19.03"
+                stroke="#FF9933"
+                stroke-width="3.4"
+                stroke-linecap="round"
+              />
+              <polygon points="56.17,22.23 54.54,14.66 48.60,20.60" fill="#FF9933" />
+            </g>
+
+            <!-- 2. Second Arrow: Pure White (#FFFFFF) -->
+            <g transform="rotate(120 36 36)">
+              <path
+                d="M 19.03 19.03 A 24 24 0 0 1 52.97 19.03"
+                stroke="#FFFFFF"
+                stroke-width="3.4"
+                stroke-linecap="round"
+              />
+              <polygon points="56.17,22.23 54.54,14.66 48.60,20.60" fill="#FFFFFF" />
+            </g>
+
+            <!-- 3. Third Arrow: India Green (#138808) -->
+            <g transform="rotate(240 36 36)">
+              <path
+                d="M 19.03 19.03 A 24 24 0 0 1 52.97 19.03"
+                stroke="#138808"
+                stroke-width="3.4"
+                stroke-linecap="round"
+              />
+              <polygon points="56.17,22.23 54.54,14.66 48.60,20.60" fill="#138808" />
+            </g>
+          </g>
+        </svg>
+
+        <div
+          id="boot-status-text"
+          style="margin-top:16px;font-size:13px;font-weight:500;letter-spacing:0.02em;color:#94A3B8;"
+        >
+          Optimizing app... wait 5 seconds
+        </div>
+      </div>
+    </div>
+    <!-- Bulletproof WebView & Browser Startup Fallbacks + Service Worker Cleanup -->
+    <script>
+      (function () {
+        // 0. Boot watchdog: if React fails to mount due to network/script error, surface reload UI instead of a blank screen
+        window.__AURELION_MOUNTED__ = false;
+        function showBootRecovery(reason) {
+          if (window.__AURELION_MOUNTED__) return;
+          var root = document.getElementById('root');
+          if (!root) return;
+          var safeReason = String(reason || 'Failed to load workspace').replace(/[<>&]/g, '');
+          root.innerHTML =
+            '<div style="display:flex;min-height:100dvh;flex-direction:column;align-items:center;justify-content:center;background:#07090E;color:#F1F5F9;font-family:system-ui,sans-serif;padding:24px;text-align:center;">' +
+            '<div style="max-width:380px;width:100%;background:#0F1420;border:1px solid rgba(0,240,255,0.3);border-radius:16px;padding:24px;">' +
+            '<div style="font-size:18px;font-weight:700;letter-spacing:0.16em;color:#00F0FF;">AURELION AI</div>' +
+            '<p style="margin-top:10px;font-size:13px;color:#CBD5E1;">Workspace loading encountered an interruption.</p>' +
+            '<p style="margin-top:6px;font-size:11px;color:#94A3B8;word-break:break-word;">' + safeReason + '</p>' +
+            '<button onclick="window.location.reload()" style="margin-top:16px;width:100%;padding:10px 16px;border:none;border-radius:10px;background:linear-gradient(90deg,#00F0FF,#8B5CF6);color:#05070B;font-weight:700;font-size:13px;cursor:pointer;">Reload AURELION AI</button>' +
+            '</div></div>';
+        }
+        window.addEventListener('error', function (ev) {
+          if (!window.__AURELION_MOUNTED__ && ev && ev.message) {
+            showBootRecovery(ev.message);
+          }
+        });
+        setTimeout(function () {
+          if (!window.__AURELION_MOUNTED__) {
+            var st = document.getElementById('boot-status-text');
+            if (st) {
+              st.innerHTML = 'Still loading... <a href="javascript:window.location.reload()" style="color:#00F0FF;text-decoration:underline;">Tap to Refresh</a>';
+            }
+          }
+        }, 6500);
+
+        // 1. Safe in-memory storage fallback for restricted Android WebViews & sandboxed iframes
+        function createMemoryStorage() {
+          var store = {};
+          return {
+            getItem: function (key) {
+              return Object.prototype.hasOwnProperty.call(store, key) ? store[key] : null;
+            },
+            setItem: function (key, value) {
+              store[key] = String(value);
+            },
+            removeItem: function (key) {
+              delete store[key];
+            },
+            clear: function () {
+              store = {};
+            },
+            key: function (index) {
+              var keys = Object.keys(store);
+              return keys[index] || null;
+            },
+            get length() {
+              return Object.keys(store).length;
+            },
+          };
+        }
+
+        try {
+          var testKey = '__aura_storage_test__';
+          window.localStorage.setItem(testKey, '1');
+          window.localStorage.removeItem(testKey);
+        } catch (e) {
+          try {
+            Object.defineProperty(window, 'localStorage', {
+              value: createMemoryStorage(),
+              configurable: true,
+              writable: true,
+            });
+          } catch (_) {}
+        }
+
+        try {
+          var sessionTestKey = '__aura_session_test__';
+          window.sessionStorage.setItem(sessionTestKey, '1');
+          window.sessionStorage.removeItem(sessionTestKey);
+        } catch (e) {
+          try {
+            Object.defineProperty(window, 'sessionStorage', {
+              value: createMemoryStorage(),
+              configurable: true,
+              writable: true,
+            });
+          } catch (_) {}
+        }
+
+        // 2. Polyfill crypto.randomUUID for older Android WebViews
+        try {
+          if (typeof window.crypto === 'undefined') {
+            window.crypto = {};
+          }
+          if (typeof window.crypto.randomUUID !== 'function') {
+            window.crypto.randomUUID = function () {
+              return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+                var r = (Math.random() * 16) | 0;
+                var v = c === 'x' ? r : (r & 0x3) | 0x8;
+                return v.toString(16);
+              });
+            };
+          }
+        } catch (_) {}
+
+        // 3. Automatically unregister any old/stuck Service Workers so cached bundles never freeze the app
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker
+            .getRegistrations()
+            .then(function (registrations) {
+              for (var i = 0; i < registrations.length; i++) {
+                registrations[i].unregister().catch(function () {});
+              }
+            })
+            .catch(function () {});
+
+          if ('caches' in window && window.caches && typeof window.caches.keys === 'function') {
+            window.caches
+              .keys()
+              .then(function (keys) {
+                keys.forEach(function (key) {
+                  window.caches.delete(key).catch(function () {});
+                });
+              })
+              .catch(function () {});
+          }
+        }
+      })();
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
